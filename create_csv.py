@@ -6,7 +6,7 @@ fake = Faker('pt_BR')
 header = ['name']
 data = []
 
-for _ in range(10):
+for _ in range(1000000):
     data.append([f'{fake.name()}'])
 
 with open('files/1_milhao.csv', 'w+', encoding='UTF8', newline='') as f:
